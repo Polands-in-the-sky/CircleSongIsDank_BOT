@@ -23,13 +23,15 @@ csid_phrases=[
     "https://cdn.discordapp.com/attachments/422359065209995275/463351884153880577/image.jpg"
 ]
 
-
-
 @bot.event
 async def on_ready():
     print("Ready to meme your server!")
     print("I am running on"+bot.user.name)
     print("With the ID:"+bot.user.id)
+
+@bot.command(pass_context=True)
+async def ping():
+    
 
 @bot.command(pass_context=True)
 async def csid(ctx):
